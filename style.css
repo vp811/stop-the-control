@@ -1,0 +1,584 @@
+/*
+Theme Name: Stop The Control
+Theme URI:
+Author: Efren Vasquez
+Author URI: https://eavasquez.com
+Description: Theme Stop the Control Website
+Version: 2.1.0
+License: GNU General Public License v2 or Later
+License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
+Text Domain: stop-the-control
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+
+*/
+
+@font-face {
+    font-family: 'Gentona_Thin';
+    src: url('../_pro-photography/fonts/gentona/Gentona_Thin.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gentona_ThinItalic';
+    src: url('../_pro-photography/fonts/gentona/Gentona_ThinItalic.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gentona_ExtraLight';
+    src: url('../_pro-photography/fonts/gentona/Gentona_ExtraLight.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gentona_ExtraLightItalic';
+    src: url('../_pro-photography/fonts/gentona/Gentona_ExtraLightItalic.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gentona_Light';
+    src: url('../_pro-photography/fonts/gentona/Gentona_Light.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gentona_LightItalic';
+    src: url('../_pro-photography/fonts/gentona/Gentona_LightItalic.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gentona_Book';
+    src: url('../_pro-photography/fonts/gentona/Gentona_Book.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Accessibility: font-weight below allows footer links to appear bold */
+@font-face {
+    font-family: 'Gentona_Book';
+    src: url('../_pro-photography/fonts/gentona/Gentona_Bold.woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gentona_BookItalic';
+    src: url('../_pro-photography/fonts/gentona/Gentona_BookItalic.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gentona_Medium';
+    src: url('../_pro-photography/fonts/gentona/Gentona_Medium.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gentona_MediumItalic';
+    src: url('../_pro-photography/fonts/gentona/Gentona_MediumItalic.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gentona_SemiBold';
+    src: url('../_pro-photography/fonts/gentona/Gentona_SemiBold.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gentona_SemiBoldItalic';
+    src: url('../_pro-photography/fonts/gentona/Gentona_SemiBoldItalic.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gentona_Bold';
+    src: url('../_pro-photography/fonts/gentona/Gentona_Bold.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gentona_BoldItalic';
+    src: url('../_pro-photography/fonts/gentona/Gentona_BoldItalic.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gentona_ExtraBold';
+    src: url('../_pro-photography/fonts/gentona/Gentona_ExtraBold.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gentona_ExtraBoldItalic';
+    src: url('../_pro-photography/fonts/gentona/Gentona_ExtraBoldItalic.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gentona_Heavy';
+    src: url('../_pro-photography/fonts/gentona/Gentona_Heavy.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gentona_HeavyItalic';
+    src: url('../_pro-photography/fonts/gentona/Gentona_HeavyItalic.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoBold';
+    src: url('../_pro-photography/fonts/noto-serif/NotoSerif-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoBoldItalic';
+    src: url('../_pro-photography/fonts/noto-serif/NotoSerif-BoldItalic.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoItalic';
+    src: url('../_pro-photography/fonts/noto-serif/NotoSerif-Italic.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoRegular';
+    src: url('../_pro-photography/fonts/noto-serif/NotoSerif-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*===================================
+
+  Universal Styling
+
+  ===================================*/
+
+body > .container {
+    margin-top: 80px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.alignleft {
+    float: left;
+}
+
+.alignright {
+    float: right;
+}
+
+.this-is-a-test p {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    background: #f2f2f2;
+    padding: 30px;
+    max-width: 50%;
+    margin: 30px auto;
+}
+
+h2 {
+    font-family: "Gentona_Bold";
+    text-transform: uppercase;
+    color: #333;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h3 {
+  font-family: "Gentona_Book";
+  font-size: 1.7rem;
+}
+
+aside h3 {
+    font-family: "Gentona_SemiBold", sans-serif;
+    font-size: 1.4rem;
+}
+
+h4 {
+  font-family: "Gentona_Light";
+  font-size: 1.5rem;
+}
+
+h5,
+h6 {
+  font-family: "Gentona_Light";
+  font-size: 1.3rem;
+}
+
+p {
+  font-family: "NotoRegular", sans-serif;
+  line-height: 25px;
+  padding: 5px 0;
+}
+
+.post-date {
+  font-family: "Gentona_LightItalic";
+}
+
+.container img {
+  margin: 0 1rem 1rem 0;
+}
+
+.container main a,
+aside a,
+.sidebar a,
+.archive-sidebar a {
+    font-family: "Gentona_Bold";
+    text-transform: uppercase;
+    color: #5d5dd2;
+}
+
+a.btn.btn-primary.btn-sm {
+  color: white;
+}
+
+article.col-md-12 {
+    margin: 2rem 0;
+}
+
+/*==================================
+
+  Header
+
+====================================*/
+header {
+  background:#0d055a no-repeat right;
+}
+
+header a {
+  color: white;
+}
+
+header .container {
+    padding: 1rem 0;
+}
+
+header .col-lg-6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-right-header-container {
+    color: white;
+}
+
+#menu-header-menu li {
+    list-style: none;
+}
+
+.main-menu ul {
+    padding: 0;
+}
+
+#nav .bg-light {
+  background-color: transparent !important;
+}
+
+header nav #menu-header-menu li a {
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar-expand-md .navbar-nav .dropdown-menu {
+    position: absolute;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #16181b !important;
+    text-decoration: none;
+    background-color: #f8f9fa;
+}
+
+img.logo {
+    max-width: 350px;
+    height: auto;
+}
+
+svg#Group_50 {
+  width: 100%;
+  height: 120px;
+}
+
+.individual-post a {
+  font-family: "Gentona" !important;
+  color: #00008f;
+  font-size: 1.5rem;
+}
+
+/*==================================
+
+  Home Page
+
+=====================================*/
+.hero-container {
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.hero-image:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to top, #130f0f, transparent);
+}
+
+.hero-title {
+    position: absolute;
+    bottom: 20px;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left: 7px;
+}
+
+.individual-post.col-md-12 img {
+  width: 100%;
+}
+
+.individual-post.col-md-12 {
+  margin-bottom: 35px;
+}
+
+header nav #menu-header-menu li a {
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  margin: 0 20px;
+  display: inline-block;
+}
+
+section.call-to-action {
+  background: #0d055a;
+  padding: 60px;
+  color: white;
+}
+
+section.call-to-action.acf {
+  background: #7f0000;
+}
+
+
+div.home-cta {
+  max-width: 1235px;
+  margin: 0 auto;
+}
+
+.home-cta h2,
+h2.home-cta {
+  color: white;
+}
+/*==================================
+
+  404 Page
+
+=====================================*/
+
+.page_404{
+  padding:40px 0;
+  background:#fff;
+  font-family: 'Arvo', serif;
+}
+
+.page_404  img{
+  width:100%;
+}
+
+.four_zero_four_bg{
+  background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+  height: 400px;
+  background-position: center;
+ }
+
+
+.four_zero_four_bg h2{
+  font-size:80px;
+}
+
+.four_zero_four_bg h3{
+  font-size:80px;
+}
+
+.link_404{
+  color: #fff!important;
+  padding: 10px 20px;
+  background: #39ac31;
+  margin: 20px 0;
+  display: inline-block;
+}
+
+.contant_box_404 {
+  margin-top:-50px;
+}
+
+/*=====================================
+
+  Archive Page
+
+========================================*/
+article.individual-post {
+    border-bottom: 1px solid #cdcdcd;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+article.individual-post img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.author-bio {
+    background: #f2f2f2;
+    padding: 1rem 1rem .5rem;
+}
+
+/*==================================
+
+  Footer
+
+=====================================*/
+footer {
+    background: #04002D;
+    padding: 5rem 0 2rem;
+    color: white;
+    font-family: "Gentona_Light";
+    font-size: 1.125rem;
+    margin-top: 5rem;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+footer a {
+    color: white;
+    border-bottom: 1px dashed;
+    font-family: "Gentona_Light";
+    font-size: 1.125rem;
+}
+
+.instagram-container,
+.facebook-container {
+    width: 48%;
+    display: inline;
+}
+
+/*==================================
+
+  Plugin styling
+
+=====================================*/
+
+#sb_instagram #sbi_load .sbi_load_btn,
+#sb_instagram .sbi_follow_btn a {
+    background: blue;
+}
+
+
+/*==================================
+
+  Media query
+
+=====================================*/
+
+@media (min-width: 768px){
+  .hero-image img {
+      max-height: 600px;
+  }
+
+  header .col-lg-6 {
+    justify-content: flex-start;
+  }
+
+  .hero-title.container {
+    font-size: 36px;
+  }
+
+  .navbar-brand {
+    display: none;
+  }
+
+}
+
+
+@media (min-width: 1025px){
+  header #menu-header-menu {
+      display: flex;
+      justify-content: space-around;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 !important;
+  }
+
+  .menu-item-has-children {
+    position: relative;
+  }
+
+  .menu-item-has-children ul.sub-menu {
+    position: absolute;
+    display: none;
+    z-index: 888;
+  }
+
+  .menu-item-has-children:hover ul.sub-menu {
+    display: block;
+    background: #333;
+    text-align: left;
+    margin: 0;
+    padding: 1rem 1.5rem 1rem .5rem;
+  }
+
+  .hero-title.container {
+    left: 0;
+    right: 0;
+    font-size: 42px;
+  }
+
+  main {
+    padding-right: 7rem !important;
+  }
+
+  .author-bio {
+    padding: 1rem 2rem .5rem;
+  }
+
+  .image-excerpt-container {
+    display: flex;
+  }
+
+  .image-excerpt-container img {
+    margin-right: 1rem;
+  }
+
+  .image-excerpt-container p {
+    padding-top: 0;
+  }
+}
