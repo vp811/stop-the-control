@@ -15,6 +15,7 @@ get_header();
 
         <div class="hero-title container">
           <?php the_title(); ?>
+          <p><?php echo get_field('sub_headline'); ?></p>
         </div>
       </div>
 
@@ -87,8 +88,8 @@ get_header();
                 </div>
               </div>
             </section> 
-    </div>
-    </div>
+        </div>
+        </div>
             <section class="call-to-action acf">
               <h2 class="home-cta"><?php echo get_field('cta-heading'); ?></h2>
               <p><?php echo get_field('cta_text'); ?></p>

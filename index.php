@@ -11,7 +11,7 @@
             ?>
 
             <?php if($i == 1){ ?>
-              <div class="individual-post col-md-12">
+              <div class="individual-post col-md-12 featured-post">
                 <div class='row'>
                   <div class='col-md-3'>
                      <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium'); ?></a>

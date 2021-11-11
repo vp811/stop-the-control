@@ -441,6 +441,7 @@ add_filter( 'wp_nav_menu_args', 'prefix_modify_nav_menu_args' );
       'hide_on_screen' => '',
       'active' => true,
       'description' => '',
+      'show_in_rest' => false,
     ));
     
     acf_add_local_field_group(array(
@@ -527,6 +528,7 @@ add_filter( 'wp_nav_menu_args', 'prefix_modify_nav_menu_args' );
       'hide_on_screen' => '',
       'active' => true,
       'description' => '',
+      'show_in_rest' => false,
     ));
     
     acf_add_local_field_group(array(
@@ -613,6 +615,7 @@ add_filter( 'wp_nav_menu_args', 'prefix_modify_nav_menu_args' );
       'hide_on_screen' => '',
       'active' => true,
       'description' => '',
+      'show_in_rest' => false,
     ));
     
     acf_add_local_field_group(array(
@@ -699,6 +702,51 @@ add_filter( 'wp_nav_menu_args', 'prefix_modify_nav_menu_args' );
       'hide_on_screen' => '',
       'active' => true,
       'description' => '',
+      'show_in_rest' => false,
+    ));
+    
+    acf_add_local_field_group(array(
+      'key' => 'group_618c70f64fff0',
+      'title' => 'Sub-headline',
+      'fields' => array(
+        array(
+          'key' => 'field_618c70fdd3cdf',
+          'label' => 'Sub Headline',
+          'name' => 'sub_headline',
+          'type' => 'text',
+          'instructions' => '',
+          'required' => 0,
+          'conditional_logic' => 0,
+          'wrapper' => array(
+            'width' => '',
+            'class' => '',
+            'id' => '',
+          ),
+          'default_value' => '',
+          'placeholder' => '',
+          'prepend' => '',
+          'append' => '',
+          'maxlength' => '',
+        ),
+      ),
+      'location' => array(
+        array(
+          array(
+            'param' => 'page_template',
+            'operator' => '==',
+            'value' => 'page-hero.php',
+          ),
+        ),
+      ),
+      'menu_order' => 0,
+      'position' => 'acf_after_title',
+      'style' => 'default',
+      'label_placement' => 'top',
+      'instruction_placement' => 'label',
+      'hide_on_screen' => '',
+      'active' => true,
+      'description' => '',
+      'show_in_rest' => 0,
     ));
     
     endif;		
